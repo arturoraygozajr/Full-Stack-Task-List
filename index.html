@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Node Task List</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row" id="header">
+     <div class="col-sm-12">
+      <h1>Task Manager</h1>
+    </div>
+  </div>
+
+  <div class="row" id="inputRow">
+   <div id="inputCol"class="col-sm-4">
+    <input id="taskInput"type="text">
+  </div>
+  <div class="col-sm-4">
+    <input id="dateInput" type="date">
+  </div>
+  <div class="col-sm-4">
+    <button id="addButton" type="button" class="btn btn-success">Add</button>
+  </div>
+</div>
+
+<table id = "table" class="table table-hover">
+ <thead>
+  <tr id="template">
+   <th>Task</th>
+   <th>Due By</th>
+   <th>Completed</th>
+   <th>Remove</th>
+ </tr>
+</thead>
+
+<tbody id="tasks">
+  <tr id="template">
+    <td  class="taskName">One</td>
+    <td class="dueDate">Two</td>
+    <td class="completed">Three</td>
+    <td class=""><input type="checkbox" class="done"></td>
+    <td class="trash"><i class="fa fa-trash-o trash"></i></td>
+  </tr>
+
+
+</tbody>
+</table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
